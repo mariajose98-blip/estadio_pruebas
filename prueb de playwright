@@ -1,0 +1,29 @@
+
+####Para probrar si se intalo la herrmaineta correctamente
+python -m pytest tests/test_prueba.py -s
+
+
+####Demuestra las pruebas Multi-navegador y Móvil con estos comandos:
+
+1. chromium
+Bash
+-m pytest tests/test_multinavegador.py --browser chromium --headed -s
+
+2. En Firefox:
+Bash
+python -m pytest tests/test_multinavegador.py --browser firefox --headed -s
+
+3. En WebKit (Safari):
+Bash
+python -m pytest tests/test_multinavegador.py --browser webkit --headed -s
+
+
+4. emulador en Iphone 13
+Bash 
+python -m pytest tests/test_iphone13.py -s
+
+
+
+PROBAR AUTOMATIZAR REGISTRO DE FORMULARIO Y QUE LA PRUEBA  FALLE
+Bash
+python -m pytest tests/test_patrocinadores.py
